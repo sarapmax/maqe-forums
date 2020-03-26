@@ -9,7 +9,7 @@ class ForumsController extends Controller
 {
     public function index()
     {
-        $posts = Post::with('author')->latest()->get(10);
+        $posts = Post::with('author')->latest()->paginate(5);
 
         return view('forum.index', compact('posts'));
     }
