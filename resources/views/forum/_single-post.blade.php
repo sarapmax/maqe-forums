@@ -1,8 +1,8 @@
-<div class="p-4 flex border border-gray-400 rounded mb-4 shadow">
-    <div class="w-4/5 flex">
-        <img src="{{ $post->image_url }}" alt="{{ $post->title }}" class="w-64">
-        <div class="px-4">
-            <h3 class="font-medium text-xl">{{ $post->title }}</h3>
+<div class="p-4 lg:flex border border-gray-400 rounded mb-4 shadow">
+    <div class="lg:w-4/5 md:flex">
+        <img src="{{ $post->image_url }}" alt="{{ $post->title }}" class="w-full md:w-2/5 lg:w-1/5 self-start">
+        <div class="md:px-4 mt-4 md:mt-0 md:w-3/5 lg:w-4/5">
+            <h3 class="font-medium text-xl leading-none">{{ $post->title }}</h3>
             <p class="text-gray-700 mt-2">{{ $post->body }}</p>
             <p class="mt-4 text-gray-500 flex items-center font-medium">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -15,7 +15,7 @@
             </p>
         </div>
     </div>
-    <div class="border-l border-gray-400 px-4 w-1/5">
+    <div class="border-t lg:border-t-0 lg:border-l border-gray-400 pt-4 lg-pt-0 lg:px-4 mt-4 lg:mt-0 lg:w-1/5">
         <img src="{{ $post->author->avatar_url }}" alt="{{ $post->author->name }}" class="rounded-full w-24 mx-auto">
         <div class="text-center mt-3">
             <h3 class="text-red-600 font-medium">{{ $post->author->name }}</h3>

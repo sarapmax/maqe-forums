@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    <div class="container mx-auto py-4">
+    <div class="container mx-auto p-4">
         <h1 class="font-bold text-4xl">MAQE - Forums</h1>
         <h3 class="text-2xl">Subtitle</h3>
 
